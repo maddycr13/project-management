@@ -1,14 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: 'null-loader',
-    });
-
-    return config;
-  },
-
   images: {
     remotePatterns: [
       {
